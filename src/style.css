@@ -12,7 +12,7 @@ body {
   max-width: 1400px;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -91,8 +91,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-
-  /*padding: 50px 171px;*/
 }
 footer .grid {
   display: grid;
@@ -138,6 +136,7 @@ footer p {
 }
 .info-box img {
   max-width: 100%;
+  display: block;
 }
 .info-box h2,
 h5 {
@@ -159,6 +158,77 @@ h5 {
 }
 .activities h5 {
   text-align: center;
+}
+.activities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
+}
+.card-body {
+  padding: 0 30px;
+}
+.activities-grid h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.activities-grid h4 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+.activities-grid p,
+li {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 7px;
+  opacity: 0.7;
+}
+
+.card-head img {
+  max-width: 50%;
+  display: block;
+}
+.card-head iframe {
+  max-width: 50%;
+}
+.activities-grid ul {
+  margin-top: 5px;
+  padding: 0 10px;
+}
+.activities-grid li {
+  list-style: none;
+}
+.activities-grid button {
+  background-color: var(--button-color);
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 16px 32px;
+}
+
+.activities-grid a {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 .gallery {
   margin: 0 auto;
