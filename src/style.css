@@ -39,6 +39,7 @@ header h3 {
   letter-spacing: 5px;
   line-height: 1.5;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 header a {
   font-size: 14px;
@@ -73,9 +74,10 @@ h5 {
   text-align: center;
   text-transform: uppercase;
 }
-img {
+.img-gallery {
   height: 370px;
   width: 370px;
+  border-radius: 4px;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -110,6 +112,16 @@ footer a:hover {
 
 .info-box {
   padding: 100px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 64px;
+}
+.info-box img {
+  width: 570px;
+}
+.info-box h2,
+h5 {
+  text-align: left;
 }
 .activities {
   background-color: #f8f8f8;
