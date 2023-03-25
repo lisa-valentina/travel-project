@@ -198,6 +198,10 @@ li {
   opacity: 0.7;
 }
 
+.card-head {
+  display: inline;
+}
+
 .card-head img {
   max-width: 50%;
   display: block;
