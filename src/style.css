@@ -2,7 +2,6 @@
   --button-color: #462cb2;
   --text-color: #272044;
 }
-
 body {
   background-color: #f5f5f5;
   font-family: "Poppins", sans-serif;
@@ -11,7 +10,6 @@ body {
   margin: 0 auto;
   max-width: 1400px;
 }
-
 h1 {
   font-size: 96px;
   font-weight: 700;
@@ -48,7 +46,6 @@ h5 {
   text-align: center;
   text-transform: uppercase;
 }
-
 button a {
   text-transform: uppercase;
   text-decoration: none;
@@ -56,6 +53,7 @@ button a {
   text-align: center;
   font-size: 14px;
   letter-spacing: 3px;
+  color: white;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
@@ -90,7 +88,6 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
-
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -106,7 +103,6 @@ footer {
 footer h4 {
   color: white;
 }
-
 footer a {
   text-decoration: none;
   color: white;
@@ -126,7 +122,6 @@ footer ul {
   margin: 0;
   padding: 0;
 }
-
 footer .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
@@ -153,15 +148,11 @@ footer .grid {
   width: 100%;
   display: block;
 }
-
 .info-box p {
   opacity: 0.7;
 }
 .activities {
   background-color: #f8f8f8;
-}
-.activities h5 {
-  text-align: center;
 }
 .activities-grid {
   display: grid;
@@ -173,7 +164,6 @@ footer .grid {
   font-weight: 700;
   color: var(--text-color);
 }
-
 .activities-grid p,
 li {
   color: var(--text-color);
@@ -197,7 +187,6 @@ li {
   padding: 16px 32px;
 }
 .activities-grid a {
-  color: white;
   font-weight: 700;
 }
 .card-head {
@@ -219,16 +208,13 @@ li {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
-
 .gallery {
   margin: 0 auto;
   padding: 100px 0px;
 }
-
 .gallery .embed {
   aspect-ratio: 1 / 1.1005;
 }
-
 .picture-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
