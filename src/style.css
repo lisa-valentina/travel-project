@@ -55,6 +55,9 @@ button a {
   letter-spacing: 3px;
   color: white;
 }
+li {
+  list-style: none;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
     url("../images/azores-hero-2.jpg");
@@ -112,9 +115,6 @@ footer a:hover {
   color: var(--button-color);
   opacity: 1;
 }
-footer li {
-  list-style: none;
-}
 footer p {
   opacity: 0.6;
 }
@@ -124,17 +124,23 @@ footer ul {
 }
 footer .grid {
   display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 25px;
   margin-bottom: 25px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
 }
-.info-box {
-  color: var(--text-color);
+.grid-2-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.grid-3-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.info-box {
+  color: var(--text-color);
   grid-gap: 64px;
 }
 .info-box h2,
@@ -154,9 +160,7 @@ footer .grid {
 .activities {
   background-color: #f8f8f8;
 }
-.activities-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.activities .grid-3-col {
   grid-gap: 30px;
   margin: 0 auto;
 }
@@ -175,10 +179,8 @@ li {
   margin-top: 5px;
   padding: 0 10px;
 }
-.activities-grid li {
-  list-style: none;
-}
-.activities-grid button {
+
+.activities button {
   background-color: var(--button-color);
   display: block;
   margin: 0 auto;
@@ -189,17 +191,13 @@ li {
 .activities-grid a {
   font-weight: 700;
 }
-.card-head {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.card-head img {
-  width: 100%;
-  display: block;
-}
 .card {
   background-color: white;
   box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
+}
+.grid-2-col img {
+  width: 100%;
+  display: block;
 }
 .card-body {
   padding: 0 30px;
@@ -215,9 +213,7 @@ li {
 .gallery .embed {
   aspect-ratio: 1 / 1.1005;
 }
-.picture-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.gallery .grid-3-col {
   grid-gap: 15px;
   margin: 0px 50px;
 }
@@ -232,6 +228,15 @@ li {
   h3 {
     font-size: 12px;
   }
+  li {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+  }
+  header {
+    padding: 30px 0;
+  }
   section {
     padding: 30px 0;
   }
@@ -243,14 +248,14 @@ li {
   .info-box img {
     display: none;
   }
-  .picture-gallery,
-  .activities-grid,
-  .card-head,
-  .info-box,
+  .grid-2-col,
+  .grid-3-col,
   footer .grid {
     grid-template-columns: 1fr;
   }
-  footer {
-    grid-template-columns: 1fr;
+  .activities button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px 16px;
   }
 }
