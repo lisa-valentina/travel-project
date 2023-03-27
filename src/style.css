@@ -258,7 +258,9 @@ li {
   footer {
     padding: 0 30px;
   }
-  .embed {
+  .embed-1,
+  .embed-2,
+  .embed-3 {
     aspect-ratio: 16 / 9;
   }
   .activities img,
