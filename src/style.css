@@ -201,12 +201,22 @@ li {
 .card-body {
   padding: 0 30px;
 }
-.embed {
+
+.embed-1 {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 0.993;
 }
-.gallery .embed {
-  aspect-ratio: 1 / 1.1005;
+.embed-2 {
+  width: 100%;
+  aspect-ratio: 1 / 1.009;
+}
+.embed-3 {
+  width: 100%;
+  aspect-ratio: 1 / 0.996;
+}
+.embed-4 {
+  width: 100%;
+  aspect-ratio: 1 / 1.265;
 }
 .gallery .grid-3-col {
   grid-gap: 15px;
