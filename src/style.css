@@ -255,6 +255,11 @@ li {
   .info-box img {
     display: none;
   }
+
+  .info-box h5,
+  .info-box h2 {
+    text-align: center;
+  }
   .grid-2-col,
   .grid-3-col,
   footer .grid {
