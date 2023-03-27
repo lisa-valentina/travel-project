@@ -199,15 +199,17 @@ li {
 }
 
 .card-head {
-  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card-head img {
-  max-width: 50%;
+  width: 100%;
   display: block;
 }
-.card-head iframe {
-  max-width: 50%;
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 .activities-grid ul {
   margin-top: 5px;
@@ -247,7 +249,7 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  margin: 0 auto;
+  margin: 0px 50px;
 }
 
 @media (max-width: 900px) {
@@ -259,6 +261,12 @@ li {
   }
   header h3 {
     font-size: 12px;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+  .activities img {
+    display: none;
   }
   footer {
     grid-template-columns: 1fr;
