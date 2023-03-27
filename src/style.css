@@ -164,22 +164,21 @@ footer .grid {
   grid-gap: 30px;
   margin: 0 auto;
 }
-.activities-grid h3 {
+.activities h3 {
   font-weight: 700;
   color: var(--text-color);
 }
-.activities-grid p,
+.activities p,
 li {
   color: var(--text-color);
   font-weight: 400;
   margin-top: 7px;
   opacity: 0.7;
 }
-.activities-grid ul {
+.activities ul {
   margin-top: 5px;
   padding: 0 10px;
 }
-
 .activities button {
   background-color: var(--button-color);
   display: block;
@@ -188,7 +187,7 @@ li {
   margin-bottom: 35px;
   padding: 16px 32px;
 }
-.activities-grid a {
+.activities a {
   font-weight: 700;
 }
 .card {
@@ -205,10 +204,6 @@ li {
 .embed {
   width: 100%;
   aspect-ratio: 1 / 1;
-}
-.gallery {
-  margin: 0 auto;
-  padding: 100px 0px;
 }
 .gallery .embed {
   aspect-ratio: 1 / 1.1005;
@@ -228,6 +223,10 @@ li {
   h3 {
     font-size: 12px;
   }
+  button a {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
   li {
     font-size: 12px;
   }
@@ -235,12 +234,20 @@ li {
     font-size: 12px;
   }
   header {
-    padding: 30px 0;
+    padding: 30px 30px;
+  }
+  header button {
+    padding: 4px 8px;
   }
   section {
+    padding: 30px 30px;
+  }
+  section .gallery {
     padding: 30px 0;
   }
-
+  footer {
+    padding: 0 30px;
+  }
   .embed {
     aspect-ratio: 16 / 9;
   }
@@ -257,5 +264,8 @@ li {
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 8px 16px;
+  }
+  .gallery .grid-3-col {
+    margin: 0 auto;
   }
 }
