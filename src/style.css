@@ -11,54 +11,12 @@ body {
   margin: 0 auto;
   max-width: 1400px;
 }
-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px 0;
-}
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-    url("../images/azores-hero-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-  padding: 150px 0;
-}
-header h1 {
+h1 {
   font-size: 96px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
-}
-header h2 {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.5;
-  color: white;
-}
-header h3 {
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: 5px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-header a {
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text-color);
-}
-header button {
-  padding: 8px 16px;
-  background-color: white;
-  border: none;
 }
 h2 {
   color: var(--text-color);
@@ -67,6 +25,17 @@ h2 {
   margin-top: 7px;
   line-height: 1.3;
   text-align: center;
+}
+h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+h4 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-bottom: 0;
 }
 h5 {
   color: var(--text-color);
@@ -79,10 +48,52 @@ h5 {
   text-align: center;
   text-transform: uppercase;
 }
-.img-gallery {
-  height: 370px;
-  width: 370px;
-  border-radius: 4px;
+
+button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url("../images/azores-hero-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+}
+header h2 {
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+}
+header h3 {
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+header a {
+  color: var(--text-color);
+}
+header button {
+  padding: 8px 16px;
+  background-color: white;
+  border: none;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
@@ -92,6 +103,30 @@ footer {
   background-repeat: no-repeat;
   color: white;
 }
+footer h4 {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+}
+footer a:hover {
+  color: var(--button-color);
+  opacity: 1;
+}
+footer li {
+  list-style: none;
+}
+footer p {
+  opacity: 0.6;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
 footer .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
@@ -101,60 +136,29 @@ footer .grid {
   margin: 0 auto;
   padding: 50px 0;
 }
-
-footer ul {
-  margin: 0;
-  padding: 0;
-}
-
-footer li {
-  list-style: none;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  opacity: 0.6;
-}
-
-footer a:hover {
-  color: var(--button-color);
-  opacity: 1;
-}
-footer p {
-  font-size: 16px;
-  line-height: 1.5;
-  opacity: 0.6;
-}
-
 .info-box {
-  padding: 100px;
+  color: var(--text-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
-  color: var(--text-color);
-}
-.info-box img {
-  max-width: 100%;
-  display: block;
 }
 .info-box h2,
-h5 {
+.info-box h5 {
   text-align: left;
 }
-
 .info-box h2 {
   margin: 7px 0;
 }
+.info-box img {
+  width: 100%;
+  display: block;
+}
 
 .info-box p {
-  font-size: 16px;
-  line-height: 1.5;
   opacity: 0.7;
 }
 .activities {
   background-color: #f8f8f8;
-  padding: 100px;
 }
 .activities h5 {
   text-align: center;
@@ -165,51 +169,17 @@ h5 {
   grid-gap: 30px;
   margin: 0 auto;
 }
-
-.card {
-  background-color: white;
-  box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
-}
-.card-body {
-  padding: 0 30px;
-}
 .activities-grid h3 {
-  font-size: 24px;
   font-weight: 700;
-  line-height: 1.5;
   color: var(--text-color);
-}
-
-.activities-grid h4 {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: var(--text-color);
-  margin-bottom: 0;
 }
 
 .activities-grid p,
 li {
   color: var(--text-color);
-  font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
   margin-top: 7px;
   opacity: 0.7;
-}
-
-.card-head {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.card-head img {
-  width: 100%;
-  display: block;
-}
-.embed {
-  width: 100%;
-  aspect-ratio: 1 /1;
 }
 .activities-grid ul {
   margin-top: 5px;
@@ -226,25 +196,39 @@ li {
   margin-bottom: 35px;
   padding: 16px 32px;
 }
-
 .activities-grid a {
   color: white;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }
+.card-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-head img {
+  width: 100%;
+  display: block;
+}
+.card {
+  background-color: white;
+  box-shadow: 20px 20px 40px rgba(198, 198, 198, 0.2);
+}
+.card-body {
+  padding: 0 30px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .gallery {
   margin: 0 auto;
   padding: 100px 0px;
 }
 
-.gallery h5 {
-  text-align: center;
+.gallery .embed {
+  aspect-ratio: 1 / 1.1005;
 }
+
 .picture-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -253,20 +237,32 @@ li {
 }
 
 @media (max-width: 900px) {
-  header h1 {
+  h1 {
     font-size: 48px;
   }
-  header h2 {
+  h2 {
     font-size: 20px;
   }
-  header h3 {
+  h3 {
     font-size: 12px;
   }
+  section {
+    padding: 30px 0;
+  }
+
   .embed {
     aspect-ratio: 16 / 9;
   }
-  .activities img {
+  .activities img,
+  .info-box img {
     display: none;
+  }
+  .picture-gallery,
+  .activities-grid,
+  .card-head,
+  .info-box,
+  footer .grid {
+    grid-template-columns: 1fr;
   }
   footer {
     grid-template-columns: 1fr;
